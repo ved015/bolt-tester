@@ -68,7 +68,7 @@ app.post("/chat", async (req, res) => {
                         text: BASE_PROMPT
                     },
                     {
-                        text: `${ReactPrompt} Make sure to necessarily create all the files mentioned above and maintain a proper folder structure for different components. Organize everything properly within a structured folder hierarchy inside \\boltactiontype. Ensure that the UI is well-designed, responsive, and visually appealing by following best practices for layout, spacing, and component organization. Use Tailwind CSS for styling, and make sure the design is clean, modern, and user-friendly. Avoid placing all the code inside App.tsx; instead, break it down into reusable components and follow a modular approach.  
+                        text: `${ReactPrompt} Make sure to necessarily create all the files shown in xml format and add the content mentioned in them and then modify them based on the requirement and maintain a proper folder structure for different components. Organize everything properly within a structured folder hierarchy inside \\boltactiontype. Ensure that the UI is well-designed, responsive, and visually appealing by following best practices for layout, spacing, and component organization. Use Tailwind CSS for styling, and make sure the design is clean, modern, and user-friendly. Avoid placing all the code inside App.tsx; instead, break it down into reusable components and follow a modular approach.  
             
               Project Structure and Organization:  
               1. Create a well-organized folder structure within /boltactiontype following this hierarchy:  
@@ -105,7 +105,7 @@ app.post("/chat", async (req, res) => {
                  - Input fields and form elements  
                  - Cards and containers  
             
-              Ensure that the UI is well-designed, responsive, and visually appealing. Avoid placing all the code inside \`App.tsx\`; instead, break it down into reusable components and follow a modular approach.`
+              Ensure that the UI is well-designed and should be working it will only work if all the necessary files are presnt, responsive, and visually appealing. Avoid placing all the code inside \`App.tsx\`; instead, break it down into reusable components and follow a modular approach.`
                     },
                     {
                         text: messages
@@ -114,7 +114,7 @@ app.post("/chat", async (req, res) => {
             }
         ],
         generationConfig: {
-            maxOutputTokens: 20000
+            maxOutputTokens: 20000,
         }
     });
     console.log(result.response.text());
