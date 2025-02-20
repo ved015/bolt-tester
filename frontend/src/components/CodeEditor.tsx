@@ -10,7 +10,7 @@ const CodeEditor: React.FC<CodeEditorProps> = ({ content, language }) => {
   return (
     <div style={editorWrapperStyle}>
       <Editor
-        height="500px"
+        height="700px"
         defaultLanguage={language}
         defaultValue={content}
         theme="vs-dark"
